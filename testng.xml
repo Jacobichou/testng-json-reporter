@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ASweetSuite" parallel="false">
+	<listeners>
+		<listener class-name="xyz.neutrallemonade.testng_json_reporter.JsonReporter" />
+	</listeners>
+	<test name="SimpleTest">
+		<classes>
+			<class name="xyz.neutrallemonade.testng_json_reporter.NewTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="AnotherSimpleTest">
+		<classes>
+			<class name="xyz.neutrallemonade.testng_json_reporter.NewTest">
+				<methods>
+					<include name="g" />
+					<include name="af" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
