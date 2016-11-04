@@ -8,7 +8,7 @@
 			<class name="xyz.neutrallemonade.testng_json_reporter.NewTest" />
 		</classes>
 	</test> <!-- Test -->
-	
+
 	<test name="AnotherSimpleTest">
 		<classes>
 			<class name="xyz.neutrallemonade.testng_json_reporter.NewTest">

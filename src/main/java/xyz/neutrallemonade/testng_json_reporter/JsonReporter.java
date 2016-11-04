@@ -17,16 +17,9 @@ import xyz.neutrallemonade.testng_json_reporter.models.Test;
 public class JsonReporter implements IReporter {
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
-		/*
-		 * ISuite suite = suites.get(0); Map<String, Collection<ITestNGMethod>>
-		 * methodsByGroup = suite.getMethodsByGroups(); Map<String,
-		 * ISuiteResult> tests = suite.getResults();
-		 * 
-		 * for(String key : tests.keySet()) { System.out.println("++ Key: " +
-		 * key + ", Value: " + tests.get(key).getTestContext().getName()); }
-		 */
 		System.out.println("_____________REPORT_____________");
 		ISuite suite = suites.get(0);
+		System.out.println("++++" + suites.size());
 		Map<String, ISuiteResult> tests = suite.getResults();
 
 		Gson gson = new Gson();
